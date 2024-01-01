@@ -17,7 +17,7 @@ public class OrderCardTest {
     }
 
     @Test
-    public void shouldBe() {
+    public void shouldBeSuccessfullyOrder() {
         open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Казань");
         $("[data-test-id=date] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
